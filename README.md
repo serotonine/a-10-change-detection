@@ -12,3 +12,10 @@ Build [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzm
 ##### Summary
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116138
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116174
+- Each Component has a `get debugOutput()` as binding value in the template.
+=> By default each component is evaluated on Change Detection (`zone.js`).
+  - it's why you ***should not*** set expensive calculations nor functions into template values.
+  - When writing Angular code you should consider telling Angular if a certain event does not matter for change detection.
+  Example: on `ngOnInt()` 2 `setTimeOut()`. The first change template bindings values the second no.
+  But the Change detection run either.
+- `zone = inject(NgZone)` Service. `this.zone.runOutsideAngular(() =>{myFct})`
