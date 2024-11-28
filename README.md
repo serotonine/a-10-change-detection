@@ -23,3 +23,5 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116
 - `zone = inject(NgZone)` Service. `this.zone.runOutsideAngular(() =>{myFct})`
 - The "OnPush" strategy on Component. `@Component {changeDetection: ChangeDetectionStrategy.OnPush}`.
   [Exceptions](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116146#overview)
+- [Working with OnPush & Services](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116162#overview). Signal changes also lead to OnPush becoming active.
+But if you ***using a Service*** your code might not work as expected if you don't use Signals.
