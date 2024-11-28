@@ -27,3 +27,5 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116
 But if you ***using a Service*** your code might not work as expected if you don't use Signals.
   - The Problem With OnPush, Cross-Component Data & Not Using Signals. 
     The message-list.component is not triggered anymore because Well, because it has `ChangeDetectionStrategy.OnPush`, and therefore change detection runs if an input changes and here there is no input nor Signal.
+  - [Triggering Change Detection Manually & Using RxJS Subjects](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116174#overview)
+    `inject(ChangeDetectorRef)` + `rxJS` + `import { BehaviorSubject } from 'rxjs';` + `variable$`
