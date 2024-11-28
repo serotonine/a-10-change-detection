@@ -18,4 +18,8 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116
   - When writing Angular code you should consider telling Angular if a certain event does not matter for change detection.
   Example: on `ngOnInt()` 2 `setTimeOut()`. The first change template bindings values the second no.
   But the Change detection run either.
+  ***
+  [Lesson](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116142#overview)
 - `zone = inject(NgZone)` Service. `this.zone.runOutsideAngular(() =>{myFct})`
+- The "OnPush" strategy on Component. `@Component {changeDetection: ChangeDetectionStrategy.OnPush}`.
+  [Exceptions](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116146#overview)
