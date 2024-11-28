@@ -6,11 +6,13 @@ import { MessagesService } from '../messages.service';
   standalone: true,
   templateUrl: './messages-list.component.html',
   styleUrl: './messages-list.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MessagesListComponent {
   private _messagesService = inject(MessagesService);
-  allMessages = this._messagesService.allMessages;
+  get allMessages() {
+    return this._messagesService.allMessages;
+  } 
   get debugOutput() {
     console.log('[MessagesList] "debugOutput" binding re-evaluated.');
     return 'MessagesList Component Debug Output';

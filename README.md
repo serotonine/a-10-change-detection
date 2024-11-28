@@ -23,5 +23,7 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116
 - `zone = inject(NgZone)` Service. `this.zone.runOutsideAngular(() =>{myFct})`
 - The "OnPush" strategy on Component. `@Component {changeDetection: ChangeDetectionStrategy.OnPush}`.
   [Exceptions](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116146#overview)
-- [Working with OnPush & Services](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116162#overview). Signal changes also lead to OnPush becoming active.
+- [Working with OnPush & Services](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116172#overview). Signal changes also lead to OnPush becoming active.
 But if you ***using a Service*** your code might not work as expected if you don't use Signals.
+  - The Problem With OnPush, Cross-Component Data & Not Using Signals. 
+    The message-list.component is not triggered anymore because Well, because it has `ChangeDetectionStrategy.OnPush`, and therefore change detection runs if an input changes and here there is no input nor Signal.
