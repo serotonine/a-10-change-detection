@@ -29,4 +29,6 @@ But if you ***using a Service*** your code might not work as expected if you don
     The message-list.component is not triggered anymore because Well, because it has `ChangeDetectionStrategy.OnPush`, and therefore change detection runs if an input changes and here there is no input nor Signal.
   - [Triggering Change Detection Manually & Using RxJS Subjects](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116174)
     `inject(ChangeDetectorRef)` + `rxJS` + `import { BehaviorSubject } from 'rxjs';` + `variable$`
-  - [Introducing The async Pipe](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116184)
+  - [Introducing The async Pipe](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116184).
+- [Get rid of Zone.js](https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/44116190)
+  If you use `Signal` or `RxJS Subjects` you don't need anymore Zone.js.
